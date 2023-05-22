@@ -39,7 +39,7 @@
     "react-dom": "^18.2.0",
     "react-notion-x": "^6.16.0",
     "sharp": "^0.30.5",
-    "use-ackee": "^3.0.0"
+    "use-ackee": "^3.0.1"
   },
   "devDependencies": {
     "@heroicons/react": "^1.0.5",

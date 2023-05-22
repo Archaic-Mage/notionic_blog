@@ -12,16 +12,16 @@ const BLOG = {
   lightBackground: '#F6F8FA', // use hex value, don't forget '#' e.g #fffefc
   darkBackground: '#212936', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy Notionic in a folder
-  since: 2022, // If leave this empty, current year will be used.
+  since: 2023, // If leave this empty, current year will be used.
   postsPerPage: 10,
   sortByDate: true,
   pagesShow: {
-    newsletter: true,
-    notes: true,
+    newsletter: false,
+    notes: false,
     projects: true,
     contact: true,
-    books: true,
-    friends: true
+    books: false,
+    friends: false
   },
   showWeChatPay: true,
   previewImagesEnabled: true,
@@ -29,9 +29,9 @@ const BLOG = {
   ogImageGenerateHost: 'og-zl.vercel.app', // The link to generate OG image, don't end with a slash
   defaultCover: '/cover.jpg',
   socialLink: {
-    twitter: '',
+    twitter: '/',
     github: 'https://github.com/Archaic-Mage',
-    telegram: ''
+    telegram: '/'
   },
   seo: {
     keywords: ['Notionic', 'Soham', 'Blog'],

@@ -5,11 +5,12 @@ import { lang } from '@/lib/lang'
 import { useRouter } from 'next/router'
 import {
   HomeIcon,
-  NewspaperIcon,
+  UserIcon,
   CollectionIcon,
   SparklesIcon,
-  SearchIcon,
-  MenuIcon
+  NewspaperIcon,
+  MenuIcon,
+  MailIcon
 } from '@heroicons/react/outline'
 import Social from '../Common/Social.js'
 import ThemeSwitcher from './ThemeSwitcher.js'
@@ -35,14 +36,14 @@ const NavBar = () => {
       name: t.NAV.INDEX,
       to: BLOG.path || '/',
       icon: <HomeIcon className='inline-block mb-1 h-5 w-5' />,
-      show: true
+      show: false
     },
     {
       id: 1,
-      name: t.NAV.NEWSLETTER,
-      to: '/newsletter',
-      icon: <NewspaperIcon className='inline-block mb-1 h-5 w-5' />,
-      show: BLOG.pagesShow.newsletter
+      name: t.NAV.ABOUT,
+      to: BLOG.path || '/about',
+      icon: <UserIcon className='inline-block mb-1 h-5 w-5' />,
+      show: true
     },
     {
       id: 2,
@@ -62,8 +63,15 @@ const NavBar = () => {
       id: 4,
       name: t.NAV.SEARCH,
       to: '/search',
-      icon: <SearchIcon className='inline-block mb-1 h-5 w-5' />,
+      icon: <NewspaperIcon className='inline-block mb-1 h-5 w-5' />,
       show: true
+    },
+    {
+      id: 5,
+      name: t.NAV.CONTACT,
+      to: '/contact',
+      icon: <MailIcon className='inline-block mb-1 h-5 w-5' />,
+      show: BLOG.pagesShow.contact
     }
   ]
   return (
