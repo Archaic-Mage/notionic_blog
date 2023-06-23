@@ -10,7 +10,8 @@ import {
   SparklesIcon,
   NewspaperIcon,
   MenuIcon,
-  MailIcon
+  MailIcon,
+  DocumentIcon
 } from '@heroicons/react/outline'
 import Social from '../Common/Social.js'
 import ThemeSwitcher from './ThemeSwitcher.js'
@@ -72,6 +73,13 @@ const NavBar = () => {
       to: '/contact',
       icon: <MailIcon className='inline-block mb-1 h-5 w-5' />,
       show: BLOG.pagesShow.contact
+    },
+    {
+      id: 6,
+      name: t.NAV.RESUME,
+      to: BLOG.resume,
+      icon: <DocumentIcon className='inline-block mb-1 h-5 w-5' />,
+      show: true
     }
   ]
   return (

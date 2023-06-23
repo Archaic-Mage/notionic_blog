@@ -2,7 +2,8 @@ const BLOG = {
   title: 'Notionic',
   author: 'Soham Tripathy',
   email: 'sohamtripathy811@gmail.com',
-  link: 'https://linkedin.com/in/archaic-mage',
+  link: 'https://archaic-mage.vercel.app/',
+  resume: 'https://drive.google.com/file/d/1h54kgwNehbj1jP33af3A7Gb1EWSYAdXN/view?usp=drive_link',
   newsletter: 'My Experience',
   description: 'A static blog build on top of Notion and Next.js',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
@@ -31,7 +32,8 @@ const BLOG = {
   socialLink: {
     twitter: '/',
     github: 'https://github.com/Archaic-Mage',
-    telegram: '/'
+    telegram: 'https://t.me/archaic_mage',
+    linkedin: 'https://linkedin.com/in/archaic-mage'
   },
   seo: {
     keywords: ['Notionic', 'Soham', 'Blog'],
@@ -42,9 +44,9 @@ const BLOG = {
   notionAccessToken: process.env.NOTION_ACCESS_TOKEN, // Useful if you prefer not to make your database public
   notionDomain: 'izuolan.notion.site',
   telegramToken: process.env.TELEGRAM_TOKEN, // The token of your Telegram bot
-  telegramChatId: '263895784', // The chat id of your Telegram bot
-  telegramChannelUrl: 'https://channel.zuolan.me/', // The link of your Telegram channel
-  telegramChannelName: 'zuolan_me', // The name of your Telegram channel
+  telegramChatId: '5923938133', // Your chat id
+  telegramChannelUrl: 'https://t.me/+U2BijIsE7PkzOWY1', // The link of your Telegram channel
+  telegramChannelName: 'Blog', // The name of your Telegram channel
   craftConfigShareUrl: 'https://www.craft.do/s/kQtcWqkv98cHhB', // The link to share your craft config
   analytics: {
     provider: '', // Currently we support Google Analytics, Ackee, Umami and Cloudflare Insights, please fill with 'ga' or 'ackee' or 'umami' or 'cf', leave it empty to disable it.

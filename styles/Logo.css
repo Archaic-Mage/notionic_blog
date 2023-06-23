@@ -1,0 +1,13 @@
+#path16 {
+    fill:#fefefe;
+    fill-opacity:1;
+    fill-rule:evenodd;
+    stroke:none
+}
+
+#path14:hover #path16 {
+    fill:blue;
+    fill-opacity:1;
+    fill-rule:evenodd;
+    stroke:none
+}
