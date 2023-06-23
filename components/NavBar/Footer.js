@@ -104,8 +104,12 @@ const Footer = ({ fullWidth }) => {
           © {from === y || !from ? y : `${from} - ${y}`} | {BLOG.author}
           <p className='md:float-right'>
             {t.FOOTER.COPYRIGHT_START}
-            <a className='underline' href={`${t.FOOTER.COPYRIGHT_LINK}`}>
-              {t.FOOTER.COPYRIGHT_NAME}
+            <a className='underline' href={`${t.FOOTER.COPYRIGHT_LINK[0]}`}>
+              {t.FOOTER.COPYRIGHT_NAME[0]}
+            </a>
+            {t.FOOTER.COPYRIGHT_SEPARATOR}
+            <a className='underline' href={`${t.FOOTER.COPYRIGHT_LINK[1]}`}>
+              {t.FOOTER.COPYRIGHT_NAME[1]}
             </a>
             {t.FOOTER.COPYRIGHT_END}
           </p>
